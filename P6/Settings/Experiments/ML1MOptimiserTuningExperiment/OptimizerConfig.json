@@ -1,0 +1,6 @@
+{
+  "DistanceMethod": "ML1MPower",
+  "ValidationSplit": 0.3,
+  "VectorDimensions": 7,
+  "UseEarlyStopping": false
+}

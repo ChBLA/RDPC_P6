@@ -1,0 +1,7 @@
+{
+  "OptimiserType": "Adam",
+  "InitialLearningRate": 0.36,
+  "ValidationSplit": 0.3,
+  "VectorDimensions": 30,
+  "RTDPower":  1.3
+}

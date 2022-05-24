@@ -1,0 +1,18 @@
+{
+  "Iterations": 50,
+  "InputDataFolder": "raw_data",
+  "DataFileName": "ml10m_complete",
+  "MetaDataFileName": "ml10m_complete_points",
+  "FileExtensions": ".json",
+  "DataFolderName": "Data",
+  "HistoryFileName": "ml10m_benchmark_truediff_hist_",
+  "OutputHistoryFolder": "run_history",
+  "OutputPointCloudFolder": "point_clouds",
+  "SaveFileName": "ml10m_benchmark_truediff_",
+  "Verbose": false,
+  "ExperimentType": "TrueDiffusion",
+  "SaveResults": true,
+  "DataType": "ML10M",
+  "PythonScriptsDirName": "PythonScripts"
+}
+

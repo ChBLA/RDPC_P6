@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Experiments\Experiments.csproj" />
+      <ProjectReference Include="..\GradientDescentAlgorithm\GradientDescentAlgorithm.csproj" />
+      <ProjectReference Include="..\LinearAlgebra\LinearAlgebra.csproj" />
+      <ProjectReference Include="..\PointCloudUtil\PointCloudUtil.csproj" />
+      <ProjectReference Include="..\IdentifiablePoints\IdentifiablePoints.csproj" />
+      <ProjectReference Include="..\PythonBindings\PythonBindings.csproj" />
+      <ProjectReference Include="..\Settings\Settings.csproj" />
+      <ProjectReference Include="..\Utils\Utils.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NLog" Version="5.0.0-rc2" />
+    </ItemGroup>
+
+</Project>

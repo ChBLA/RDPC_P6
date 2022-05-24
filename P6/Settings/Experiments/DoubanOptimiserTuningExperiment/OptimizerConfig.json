@@ -1,0 +1,6 @@
+{
+  "DistanceMethod": "DoubanPower",
+  "ValidationSplit": 0.3,
+  "VectorDimensions": 30,
+  "UseEarlyStopping": false
+}

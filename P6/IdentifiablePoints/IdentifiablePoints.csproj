@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>IdentifiablePoints</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GradientDescentAlgorithm\GradientDescentAlgorithm.csproj" />
+    <ProjectReference Include="..\PythonBindings\PythonBindings.csproj" />
+    <ProjectReference Include="..\Settings\Settings.csproj" />
+    <ProjectReference Include="..\LinearAlgebra\LinearAlgebra.csproj" />
+    <ProjectReference Include="..\PointCloudUtil\PointCloudUtil.csproj" />
+  </ItemGroup>
+</Project>

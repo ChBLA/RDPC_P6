@@ -1,0 +1,17 @@
+{
+  "Iterations": 1,
+  "InputDataFolder": "raw_data",
+  "DataFileName": "douban_ratings_train",
+  "FileExtensions": ".json",
+  "DataFolderName": "Data",
+  "HistoryFileName": "douban_benchmark_diff_hist_",
+  "OutputHistoryFolder": "run_history",
+  "OutputPointCloudFolder": "point_clouds",
+  "SaveFileName": "douban_benchmark_diff_",
+  "Verbose": false,
+  "ExperimentType": "DiffusionBenchmark",
+  "SaveResults": true,
+  "DataType": "Douban",
+  "PythonScriptsDirName": "PythonScripts"
+}
+

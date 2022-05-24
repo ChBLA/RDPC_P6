@@ -1,0 +1,91 @@
+{
+  "profiles": {
+    "Main": {
+      "commandName": "Project"
+    },
+    "TrueDiffusion": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML10MTrueDiffusionExperiment"
+    },
+    "DB_VanillaBenchmark": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanVanillaBenchmark"
+    },
+    "DB_RTDConstant": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanRTDConstantTuningExperiment"
+    },
+    "DB_RTDPower": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanRTDPowerTuningExperiment"
+    },
+    "DB_Optimisers": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanOptimiserTuningExperiment"
+    },
+    "DB_DimTest": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanDimensionTuningExperiment"
+    },
+    "DB_DiffusionBenchmark": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanDiffusionBenchmark 2"
+    },
+    "DB_TuneLRDecay": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanTuneLRDecayExperiment 1"
+    },
+    "DB_TuneDecayConstant": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanTuneDecayConstantExperiment 2"
+    },
+    "DB_TuneDecayFactor": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanTuneDecayFactorExperiment 2"
+    },
+    "DB_TuneDecayBase": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments DoubanTuneDecayBaseExperiment 2"
+    },
+    "ML_DiffusionBenchmark": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MDiffusionBenchmark 2"
+    },
+    "ML_DimTest": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MDimensionTuningExperiment"
+    },
+    "ML_Optimisers": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MOptimiserTuningExperiment"
+    },
+    "ML_RTDPower": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MRTDPowerTuningExperiment"
+    },
+    "ML_RTDConstant": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MRTDConstantTuningExperiment"
+    },
+    "ML_VanillaBenchmark": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MVanillaBenchmark"
+    },
+    "ML_TuneLRDecay": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MTuneLRDecayExperiment 2"
+    },
+    "ML_TuneDecayConstant": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MTuneDecayConstantExperiment 2"
+    },
+    "ML_TuneDecayFactor": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MTuneDecayFactorExperiment 2"
+    },
+    "ML_TuneDecayBase": {
+      "commandName": "Project",
+      "commandLineArgs": "Experiments ML1MTuneDecayBaseExperiment 2"
+    }
+  }
+}

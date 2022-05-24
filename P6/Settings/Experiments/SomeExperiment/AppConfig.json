@@ -1,0 +1,18 @@
+{
+    "RunMode": "Normal",
+    "Iterations": 100,
+    "DataFolderName": "Data",
+    "InputDataFolder": "raw_data",
+    "OutputHistoryFolder": "run_history",
+    "OutputPointCloudFolder": "point_clouds",
+    "SaveFileName": "movielens_data_points",
+    "HistoryFileName": "ml_hist",
+    "DataFileName": "movielens_training_ratings",
+    "Verbose": false,
+    "SaveOutput": false,
+    "FileExtensions": ".json",
+    "SaveResults": true,
+    "DataType": "Movielens",
+    "PythonScriptsDirName": "PythonScripts"
+}
+

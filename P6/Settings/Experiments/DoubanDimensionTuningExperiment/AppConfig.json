@@ -1,0 +1,15 @@
+{
+  "Iterations": 1,
+  "InputDataFolder": "raw_data",
+  "DataFileName": "douban_ratings_train",
+  "FileExtensions": ".json",
+  "DataFolderName": "Data",
+  "HistoryFileName": "douban_dim_tune_hist",
+  "OutputHistoryFolder": "run_history",
+  "Verbose": false,
+  "ExperimentType": "TuneDimensions",
+  "SaveResults": true,
+  "DataType": "Douban",
+  "PythonScriptsDirName": "PythonScripts"
+}
+

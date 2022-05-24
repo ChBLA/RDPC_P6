@@ -1,0 +1,8 @@
+{
+  "InitialLearningRate": 3,
+  "ProportionalLR": false,
+  "Momentum": 0.9,
+  "VectorDimensions":  10,
+  "DistanceMethod": "Flipped",
+  "ValidationSplit": 0
+}

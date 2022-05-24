@@ -1,0 +1,18 @@
+{
+  "RunMode": "MultiRun",
+  "Iterations": 10000,
+  "DataFolderName": "Data",
+  "InputDataFolder": "raw_data",
+  "OutputHistoryFolder": "run_history",
+  "OutputPointCloudFolder": "point_clouds",
+  "SaveFileName": "ml_diff3_lr_lrdecay_tuning_v2_",
+  "HistoryFileName": "ml_diff1_lr_lrdecay_tuning_v2_hist_",
+  "DataFileName": "movielens_training_ratings",
+  "Verbose": false,
+  "SaveOutput": true,
+  "FileExtensions": ".json",
+  "SaveResults": true,
+  "DataType": "MovieLens",
+  "PythonScriptsDirName": "PythonScripts"
+}
+

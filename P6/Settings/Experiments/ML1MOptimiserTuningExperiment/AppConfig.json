@@ -1,0 +1,15 @@
+{
+  "Iterations": 100,
+  "InputDataFolder": "raw_data",
+  "DataFileName": "movielens_training_ratings",
+  "FileExtensions": ".json",
+  "DataFolderName": "Data",
+  "HistoryFileName": "ml1m_optimiser_tune_hist_",
+  "OutputHistoryFolder": "run_history",
+  "Verbose": false,
+  "ExperimentType": "TuneOptimisers",
+  "SaveResults": true,
+  "DataType": "ML1M",
+  "PythonScriptsDirName": "PythonScripts"
+}
+

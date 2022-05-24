@@ -1,0 +1,17 @@
+{
+  "Iterations": 1,
+  "InputDataFolder": "raw_data",
+  "DataFileName": "douban_ratings_train",
+  "FileExtensions": ".json",
+  "DataFolderName": "Data",
+  "HistoryFileName": "douban_tune_decay_factor_hist",
+  "OutputHistoryFolder": "run_history",
+  "OutputPointCloudFolder": "point_clouds",
+  "SaveFileName": "douban_tune_decay_factor",
+  "Verbose": false,
+  "ExperimentType": "TuneLRDecayFactor",
+  "SaveResults": true,
+  "DataType": "Douban",
+  "PythonScriptsDirName": "PythonScripts"
+}
+

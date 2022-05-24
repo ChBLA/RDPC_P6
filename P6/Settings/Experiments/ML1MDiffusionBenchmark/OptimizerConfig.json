@@ -1,0 +1,9 @@
+{
+  "OptimiserType": "Adam",
+  "InitialLearningRate": 2.8,
+  "DistanceMethod": "ML1MPower",
+  "ValidationSplit": 0,
+  "VectorDimensions": 7,
+  "UseEarlyStopping": true,
+  "DiffusionDegree":  3
+}

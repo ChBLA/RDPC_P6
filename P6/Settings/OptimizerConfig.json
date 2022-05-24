@@ -1,0 +1,10 @@
+{
+  "OptimiserType": "Adam",
+  "InitialLearningRate": 0.36,
+  "ProportionalLR": false,
+  "Momentum": 0.9,
+  "VectorDimensions": 30,
+  "DistanceMethod": "ML1MPower",
+  "ValidationSplit": 0.3,
+  "UseEarlyStopping": false
+}

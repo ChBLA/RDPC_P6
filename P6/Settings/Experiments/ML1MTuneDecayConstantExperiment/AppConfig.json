@@ -1,0 +1,17 @@
+{
+  "Iterations": 1,
+  "InputDataFolder": "raw_data",
+  "DataFileName": "movielens_training_ratings",
+  "FileExtensions": ".json",
+  "DataFolderName": "Data",
+  "HistoryFileName": "ml1m_tune_decay_constant_hist",
+  "OutputHistoryFolder": "run_history",
+  "OutputPointCloudFolder": "point_clouds",
+  "SaveFileName": "ml1m_tune_decay_constant",
+  "Verbose": false,
+  "ExperimentType": "TuneLRDecayConstant",
+  "SaveResults": true,
+  "DataType": "ML1M",
+  "PythonScriptsDirName": "PythonScripts"
+}
+

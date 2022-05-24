@@ -1,0 +1,61 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: DC run",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-q", "-c",
+                "--files", "ml_super_merged_file.json", "douban_super_merged_file.json",
+                "--type", "c",
+                "--factor", "0.025",
+                "--base", "0.1",
+            ]
+        },
+        {
+            "name": "Python: DF run",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-q", "-c",
+                "--files", "ml1m_tune_decay_factor_hist2_.json", "douban_tune_decay_factor_hist2_.json",
+                "--type", "f",
+                "--constant", "0.02", "0.0075",
+                "--base", "0.1",
+            ]
+        },
+        {
+            "name": "Python: DB run",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-q", "-c",
+                "--files", "ml1m_tune_decay_base_hist2_.json", "douban_tune_decay_base_hist2_.json",
+                "--type", "b",
+                "--constant", "0.02", "0.0075",
+                "--factor", "0.022", "0.028"
+            ]
+        }
+    ]
+}

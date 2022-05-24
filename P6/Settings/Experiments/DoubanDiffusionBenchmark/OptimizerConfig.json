@@ -1,0 +1,9 @@
+{
+  "OptimiserType": "Adam",
+  "InitialLearningRate": 0.36,
+  "DistanceMethod": "DoubanPower",
+  "ValidationSplit": 0,
+  "VectorDimensions": 30,
+  "UseEarlyStopping": true,
+  "DiffusionDegree":  3
+}
