@@ -86,6 +86,10 @@
     "ML_TuneDecayBase": {
       "commandName": "Project",
       "commandLineArgs": "Experiments ML1MTuneDecayBaseExperiment 2"
+    },
+    "Setup": {
+      "commandName": "Project",
+      "commandLineArgs": "Setup"
     }
   }
 }

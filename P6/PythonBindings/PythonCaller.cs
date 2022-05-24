@@ -34,8 +34,11 @@ namespace PythonBindings
             }
             else
                 startInfo.ArgumentList.Add(_pyscriptDirPath + _pathHandler.Separator + fileName);
-            foreach (string arg in arguments)
-                startInfo.ArgumentList.Add(arg);
+            if (arguments is not null)
+            {
+                foreach (string arg in arguments)
+                    startInfo.ArgumentList.Add(arg);
+            }
             process.StartInfo = startInfo;
             process.Start();
 
