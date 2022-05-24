@@ -10,8 +10,8 @@ DataVisualisation/*/*.json
 
 DataVisualisation/__pycache__/plotting_util.cpython-39.pyc
 
-Data/run_history
-Data/point_clouds
+Data/run_history/*.json
+Data/point_clouds/*.json
 
 *.pyc
 Data/raw_data/*.json
@@ -418,7 +418,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-
-p6_readme.tgn
-P6/Experiments/run_experiment.sh
-P6/Main/run_experiment.sh

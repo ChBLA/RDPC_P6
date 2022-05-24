@@ -20,6 +20,12 @@ python process_ml10m.py
 ```
 Both commands may be time-consuming, especially so for the second. 
 
+Alternatively, run the following C# script:
+```
+docker build -t p6_experiments:0.1 .
+docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments SomeExperiment
+```
+
 ## Experiments
 
 Experiment configurations can be found in [P6/Settings/Experiments](P6/Settings/Experiments).
@@ -27,13 +33,14 @@ Experiment configurations can be found in [P6/Settings/Experiments](P6/Settings/
 Each folder in [P6/Settings/Experiments](P6/Settings/Experiments) correspond to a single experiment and such a folder contains two files `AppConfig.json` and `OptimizerConfig.json` specifying the setup for the experiment.
 
 ### Running experiments
-
-The following procedure can be followed to run `SomeExperiment` using Docker:
-
+Before running any experiment, the docker image must be build by following command:
 ```zsh 
 # build image (assuming that current working directory is the root of the codebase)
 docker build -t p6_experiments:0.1 .
+```
 
+The following procedure can be followed to run `SomeExperiment` using Docker:
+```zsh
 # start the container
 # this will start executing the experiment represented by folder SomeExperiment 
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments SomeExperiment
@@ -51,51 +58,42 @@ docker run --entrypoint "/bin/bash" -it --rm -v "$(pwd)"/Data:/reldist/Data p6_e
 ```
 ### Tuning experiments
 RTD tuning experiments x ∈ {DoubanRTDConstantTuningExperiment, DoubanRTDPowerTuningExperiment, ML1MRTDConstantTuningExperiment, ML1MRTDPowerTuningExperiment} run:
-```
-docker build -t p6_experiments:0.1 .
+```zsh
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments x
 ```
 
 Decay function tuning for ML1M and Douban for x ∈ {DoubanTuneDecayConstantExperiment, DoubanTuneDecayFactorExperiment, DoubanTuneDecayBaseExperiment, ML1MTuneDecayConstantExperiment, ML1MTuneDecayFactorExperiment, ML1MTuneDecayBaseExperiment} and diffusion degree # run:
-```
-docker build -t p6_experiments:0.1 .
+```zsh
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments x #
 ```
 
 Tune dimensions for ML1M and Douban for x ∈ {DoubanDimensionTuningExperiment, ML1MDimensionTuningExperiment} run:
-```
-docker build -t p6_experiments:0.1 .
+```zsh
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments x
 ```
 
 Tune optimisers for ML1M and Douban for x ∈ {DoubanOptimiserTuningExperiment, ML1MOptimiserTuningExperiment} run:
-```
-docker build -t p6_experiments:0.1 .
+```zsh
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments x
 ```
 
 ### Benchmark experiments
 To perform benchmarking on the MovieLens 1M (ML1M) and Douban datasets for the RDPC model run:
-```
-docker build -t p6_experiments:0.1 .
+```zsh
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments ML1MVanillaBenchmark
 
-docker build -t p6_experiments:0.1 .
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments DoubanVanillaBenchmark
 ```
 
 To perform benchmark on the MovieLens 1M (ML1M) and Douban datasets for the RDPC-D with diffusion degree "#" run:
-```
-docker build -t p6_experiments:0.1 .
+```zsh
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments ML1MDiffusionBenchmark #
 
-docker build -t p6_experiments:0.1 .
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments DoubanDiffusionBenchmark #
 ```
 
 To perform scalability experiment on MovieLens 10M (ML10M) for diffusion degree # run:
-```
-docker build -t p6_experiments:0.1 .
+```zsh
 docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments ML10MTrueDiffusionExperiment #
 ```
 

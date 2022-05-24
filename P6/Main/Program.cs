@@ -35,7 +35,6 @@ namespace Main
                         (AppConfig appConfig, OptimizerConfig optimizerConfig) = ExtractConfigurations(args[1..args.Length]);
                         RunExperiment(appConfig, optimizerConfig);
                         break;
-                    // other 'projects' can be added here
                     case "Setup":
                         Logger.Info($"Starting processing of ML1M");
                         PythonCaller pyCaller1 = new PythonCaller();
