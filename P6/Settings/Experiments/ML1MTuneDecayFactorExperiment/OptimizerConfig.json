@@ -6,8 +6,8 @@
   "VectorDimensions": 7,
   "UseEarlyStopping": false,
   "DiffusionDegree": 3,
-  "DecayConstant": 0.15,
+  "DecayConstant": 0.02,
   "DecayFactor": 0.0,
-  "DecayFactorStep": 0.025,
+  "DecayFactorStep": 0.002,
   "DecayPowerBase": 0.1
 }

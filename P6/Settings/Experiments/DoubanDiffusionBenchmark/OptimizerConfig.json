@@ -1,9 +1,12 @@
 {
   "OptimiserType": "Adam",
-  "InitialLearningRate": 0.36,
+  "InitialLearningRate": 0,
   "DistanceMethod": "DoubanPower",
   "ValidationSplit": 0,
   "VectorDimensions": 30,
   "UseEarlyStopping": true,
-  "DiffusionDegree":  3
+  "DiffusionDegree": 3,
+  "DecayConstant": 0.0075,
+  "DecayFactor": 0.028,
+  "DecayPowerBase": 0.7
 }

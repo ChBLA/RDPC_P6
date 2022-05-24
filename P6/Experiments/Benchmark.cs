@@ -74,9 +74,8 @@ namespace Experiments
 
         public (IExperimentResult, Action) DiffusionBenchmark()
         {
-            Func<int, float> lrFunc = _appConfig.DataType.Equals(DataType.Douban)
-                ? (int s) => (0.036f + 0.16f * (float)Math.Pow(0.01f, s))
-                : (int s) => (0.14f + (0.57f) * (float)Math.Pow(0.37f, s));        // ML1M (check)
+            Func<int, float> lrFunc = (int s) => _optimizationConfig.DecayConstant + 
+                _optimizationConfig.DecayFactor * (float)Math.Pow(_optimizationConfig.DecayPowerBase, s);
             int diffusionSteps = _optimizationConfig.UseEarlyStopping ? -1 : _appConfig.Iterations;
 
             var allRes = new List<Experiment2Rapport>();

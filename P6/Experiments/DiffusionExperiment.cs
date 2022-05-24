@@ -177,7 +177,7 @@ namespace Experiments
 
             // Measures for early stopping
             int noImprovementCounter = 0;
-            float minImprovement = -5.0f;
+            float minImprovement = _appConfig.DataType.Equals(DataType.Douban) ? -5.0f : -125.0f;
             float currentBestError = float.MaxValue;
             bool useEarlyStopping = false;
             bool earlyStop = false;
@@ -243,7 +243,7 @@ namespace Experiments
                         noImprovementCounter = 0;
                     }
 
-                    if (noImprovementCounter > 4)
+                    if (noImprovementCounter > (_appConfig.DataType.Equals(DataType.Douban) ? 4 : 2))
                     {
                         earlyStop = true;
                         Console.WriteLine($"\nEarly stop at {s} iterations with error {mergedTotalError}");
