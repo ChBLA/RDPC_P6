@@ -21,6 +21,9 @@ Data/raw_data/*.csv
 Data/raw_data/subclouds
 Data/raw_data/old_subclouds
 
+!Data/raw_data/douban_ratings_test.json
+!Data/raw_data/douban_ratings_train.json
+
 P6/.vs/P6/v17/.futdcache.v1
 P6/GradientDescentAlgorithm/obj/GradientDescentAlgorithm.csproj.nuget.g.targets
 .venv
