@@ -206,7 +206,6 @@ namespace Main
 
             return result;
         }
-
         private static (AppConfig, OptimizerConfig) ExtractConfigurations(string[] args)
         {
             ExperimentConfigManager expConf = new ExperimentConfigManager();
@@ -226,29 +225,6 @@ namespace Main
 
             return (appConfig, optimizerConfig);
         } 
-
-        private void tuneExperiments(PointLoader loader)
-        {
-            var optimisers = new OptimiserType[] { OptimiserType.Adam, OptimiserType.RMSProp, OptimiserType.Nesterov, OptimiserType.Momentum, OptimiserType.Vanilla };
-            var lr = new float[] { 2.8f, 1.2f, 0.00052f, 0.00085f, 0.00085f };
-            var dn_lr = new float[] { 0.364f, 1.72f, 0.00168f, 0.001f, 0.02494f };
-            int optimiser = 0;
-            int[] dimensions = new int[] { 7, 30 };
-            float[] power = new float[] { 1.5f, 1.9f }, constant = new float[] { 6.4f, 7.2f };
-            int dataset = 0;
-            string jsonString = "";
-
-            Logger.Info("Starting!");
-            for (int i = 0; i < optimisers.Length; i++) //< optimisers.Length
-            {
-                Logger.Info("Optimiser: " + Enum.GetName(optimisers[i]));
-                var results = new PointCloudExperiments(loader).VaryLearningRate((int a) => lr[i], 20, optimisers[i],
-                                                                                 dimensions: dimensions[dataset]);
-                jsonString = JsonConvert.SerializeObject(results);
-                File.WriteAllText(_appConfig.HistorySaveFilePathNoExt + "_vary_lr_rtd_constant_" + Enum.GetName(optimisers[i]) + ".json", jsonString);
-                Logger.Info($"Saved!");
-            }
-        }
         private static void PrintReceivedArgs(string[] args)
         {
             StringBuilder sb = new StringBuilder();
@@ -257,8 +233,6 @@ namespace Main
                 sb.Append($" arg[{i}]='{args[i]}'");
             Logger.Info(sb.ToString());
         }
-        
-
         private static void WriteToFile(IExperimentResult results)
         {
             string jsonString = results.SerializeResult();
