@@ -4,6 +4,9 @@ WORKDIR /reldist
 COPY /P6 ./P6
 COPY /PythonScripts ./PythonScripts
 
+RUN apt-get update && \
+    apt-get -y install python3 python3-venv 
+
 WORKDIR /reldist/P6/Main
 RUN dotnet restore
 RUN dotnet publish -c Release 

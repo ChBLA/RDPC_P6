@@ -23,7 +23,7 @@ Both commands may be time-consuming, especially so for the second.
 Alternatively, run the following C# script:
 ```
 docker build -t p6_experiments:0.1 .
-docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Experiments SomeExperiment
+docker run --rm -v "$(pwd)"/Data:/reldist/Data p6_experiments:0.1 Setup
 ```
 
 ## Experiments
